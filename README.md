@@ -21,7 +21,7 @@
 
 ## 🚀 Quick Start
 
-```bash
+bash
 # Clone the repository
 git clone https://github.com/SayabArshad/Automatic-Essay-Grader.git
 cd Automatic-Essay-Grader
