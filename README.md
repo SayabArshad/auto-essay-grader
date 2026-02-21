@@ -1,219 +1,112 @@
-# 🧠 Automatic Essay Grader
+# 🧠 Automatic Essay Grader | AI-Powered Scoring System 🤖  
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch) ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow?logo=huggingface) ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?logo=scikit-learn) ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blue?logo=pandas) ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?logo=numpy) ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?logo=python) ![License](https://img.shields.io/badge/License-MIT-yellow) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-<div align="center">
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Essay Grader Logo" width="140"/>
+</p>
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-<img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace">
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib">
+🚀 The **Automatic Essay Grader** is an advanced AI system that automatically scores essays using state-of-the-art Natural Language Processing. It combines the power of **BERT** with traditional machine learning approaches to provide accurate, consistent, and scalable essay grading. Perfect for educators, researchers, and automated assessment platforms.
 
-**AI-Powered Automated Essay Scoring System**  
-*Leveraging BERT and Machine Learning for Accurate Essay Grading*
+---
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SayabArshad)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/SayabArshad/Automatic-Essay-Grader?style=for-the-badge&color=yellow)](https://github.com/SayabArshad/Automatic-Essay-Grader/stargazers)
+## ✨ Key Features  
+🤖 **BERT Integration** – Leverages pre-trained BERT models for deep semantic understanding  
+📊 **TF-IDF Fallback** – Traditional ML approach (Random Forest, Linear Regression) when BERT is unavailable  
+📈 **Comprehensive Metrics** – Reports MSE, MAE, R², and detailed statistical analysis  
+🎨 **Visual Analytics** – Generates interactive plots and score distribution graphs  
+🔄 **Auto Fallback** – Seamlessly switches between BERT and traditional methods  
+📝 **Essay Analysis** – Computes word count, sentence structure, lexical diversity  
 
-</div>
+---
 
-## 🚀 Quick Start
+## 🧠 Tech Stack  
+- **Language:** Python 🐍  
+- **Deep Learning:** PyTorch, HuggingFace Transformers (BERT) 🤗  
+- **ML Libraries:** scikit-learn, pandas, NumPy  
+- **Visualization:** Matplotlib, Seaborn  
+- **Recommended IDE:** VS Code / PyCharm 💻  
 
-bash
-# Clone the repository
+---
+
+## 📦 Installation  
+
+```bash
 git clone https://github.com/SayabArshad/Automatic-Essay-Grader.git
 cd Automatic-Essay-Grader
-
-# Install dependencies
 pip install -r requirements.txt
+````
 
-# Run the application
+⚙️ Note: Ensure you have Python 3.8+ and PyTorch installed (CUDA optional but recommended for BERT).
+
+---
+
+##  ▶️ Usage
+
+```bash
 python "Automatic Essay Grading using BERT.py"
-📋 Overview
-The Automatic Essay Grader is an advanced AI system that automatically scores essays using state-of-the-art Natural Language Processing techniques. The system combines the power of BERT (Bidirectional Encoder Representations from Transformers) with traditional machine learning approaches to provide accurate, consistent, and scalable essay grading.
+```
 
-<div align="center"> <img src="assets/code.JPG" alt="Code Implementation" width="800"/> <p><em>Code implementation showing dual-model architecture</em></p> </div>
-✨ Features
-Feature	Description	Status
-🤖 BERT Integration	Uses pre-trained BERT models for semantic understanding	✅
-📊 TF-IDF Fallback	Traditional ML approach when BERT unavailable	✅
-📈 Comprehensive Metrics	MSE, MAE, R², and detailed statistical analysis	✅
-🎨 Visual Analytics	Interactive plots and data visualizations	✅
-🔄 Auto Fallback	Seamless switch between BERT and traditional methods	✅
-📝 Essay Analysis	Word count, sentence structure, lexical diversity	✅
-🛠️ Technologies Used
-<div align="center">
-Technology	Purpose	Logo
-Python 3.8+	Core programming language	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" alt="Python">
-PyTorch	Deep learning framework	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40" alt="PyTorch">
-Transformers	BERT and NLP models	<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="40" alt="HuggingFace">
-scikit-learn	Traditional ML algorithms	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" width="40" alt="scikit-learn">
-Pandas	Data manipulation	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" alt="Pandas">
-NumPy	Numerical computing	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" alt="NumPy">
-Matplotlib	Data visualization	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="40" alt="Matplotlib">
-Seaborn	Statistical visualizations	<img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="40" alt="Seaborn">
-</div>
-📁 Project Structure
-text
+The script will load the dataset (ASAP.csv), preprocess essays, train/evaluate models, and display performance metrics along with visualizations.
+
+---
+
+## 📁 Project Structure
+
+```
 Automatic-Essay-Grader/
-│
-├── assets/                           # Visual assets
-│   ├── code.JPG                      # Code screenshot
-│   ├── output.JPG                    # Output screenshot
-│   └── plot.JPG                      # Visualization screenshot
-│
-├── Automatic Essay Grading using BERT.py    # Main application
-├── ASAP.csv                                 # Sample dataset
-├── requirements.txt                         # Dependencies
-├── LICENSE                                  # MIT License
-└── README.md                                # This documentation
-🔧 Installation
-Prerequisites
-Python 3.8 or higher
+│-- Automatic Essay Grading using BERT.py  
+│-- ASAP.csv                                 
+│-- requirements.txt                         
+│-- README.md                                 
+│-- assets/                                   
+│    ├── code.JPG
+│    ├── output.JPG
+│    └── plot.JPG
+```
 
-pip package manager
+---
 
-Git (for cloning repository)
+## 🖼️ Interface Previews
 
-Step 1: Clone Repository
-bash
-git clone https://github.com/SayabArshad/Automatic-Essay-Grader.git
-cd Automatic-Essay-Grader
-Step 2: Create Virtual Environment (Optional but Recommended)
-bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+| 📝 Code Snippet | 📊 Console Output |
+|:---------------:|:-----------------:|
+| ![Code Snippet](assets/code.JPG) | ![Output](assets/output.JPG) |
 
-# Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
-Step 3: Install Dependencies
-bash
-pip install -r requirements.txt
-requirements.txt:
+## 📈 Visualizations
 
-txt
-# Core Data Science
-pandas==1.5.3
-numpy==1.24.3
-scikit-learn==1.3.0
+![Plot](assets/plot.JPG)
 
-# Visualization
-matplotlib==3.7.1
-seaborn==0.12.2
+---
 
-# Deep Learning (for BERT)
-torch==2.0.1
-transformers==4.31.0
+## 💡 About the Project
 
-# Jupyter (optional)
-jupyter==1.0.0
-💻 Usage
-Basic Usage
-Prepare your dataset (CSV format with essay text and scores)
+This project demonstrates the application of BERT-based language models for automated essay scoring. It builds a robust pipeline that preprocesses text, extracts features using either BERT embeddings or TF-IDF, and trains regression models to predict essay scores. The dual‑model architecture ensures reliability even in resource‑constrained environments. Ideal for understanding NLP in real‑world educational technology.
 
-Run the main script:
+---
 
-bash
-python "Automatic Essay Grading using BERT.py"
-Sample Code Usage
-python
-# Import and use the grading system
-from essay_grader import EssayGrader
+## 🧑‍💻 Author
 
-# Initialize grader
-grader = EssayGrader(model_type='bert')  # or 'tfidf'
+**Developed by:** [Sayab Arshad Soduzai](https://github.com/SayabArshad) 👨‍💻
 
-# Grade an essay
-essay = "Education is the most powerful weapon which you can use to change the world."
-score = grader.grade_essay(essay)
-print(f"Predicted Score: {score}")
-📈 Results & Visualizations
-Program Output
-<div align="center"> <img src="assets/output.JPG" alt="Program Output" width="800"/> <p><em>Console output showing dataset statistics and preprocessing results</em></p> </div>
-Data Visualization
-<div align="center"> <img src="assets/plot.JPG" alt="Data Visualization" width="800"/> <p><em>Score distribution and statistical analysis visualizations</em></p> </div>
-Performance Metrics
-Model	MSE ↓	MAE ↓	R² ↑	Training Time
-BERT	0.45	0.52	0.85	45 min
-Random Forest	0.52	0.58	0.82	5 min
-Linear Regression	0.65	0.65	0.78	1 min
-🤖 How It Works
-BERT Approach
-python
-# Workflow:
-1. Input Essay → 2. BERT Tokenization → 3. Fine-tuning → 4. Score Prediction
-TF-IDF + ML Approach
-python
-# Workflow:
-1. Text Cleaning → 2. Feature Extraction → 3. Vectorization → 4. Regression
-📊 Dataset
-Required Format
-csv
-full_text,score,essay_id,prompt_name
-"Education is important...",4,ESSAY001,Prompt1
-"Technology has changed...",5,ESSAY002,Prompt2
-Dataset Statistics
-python
-# Sample statistics from ASAP dataset
-- Total Essays: 24,728
-- Score Range: 1-6
-- Average Score: 2.94
-- Standard Deviation: 1.04
-🎯 Customization
-Modify Model Parameters
-python
-# In the main script, adjust these parameters:
+📅 **Version:** 1.0.0
 
-# BERT Configuration
-max_length = 512        # Increase for longer essays
-batch_size = 8          # Adjust based on GPU memory
-learning_rate = 3e-5    # Learning rate for fine-tuning
-epochs = 5              # Number of training epochs
+📜 **License:** MIT License
 
-# TF-IDF Configuration
-max_features = 1000     # Number of TF-IDF features
-ngram_range = (1, 3)    # Use trigrams as well
-🤝 Contributing
-We welcome contributions! Here's how you can help:
 
-Contribution Workflow
-Fork the Repository
+---
 
-bash
-git fork https://github.com/SayabArshad/auto-essay-grader.git
-Create a Feature Branch
+## ⭐ Contributions
 
-bash
-git checkout -b feature/AmazingFeature
-Commit Your Changes
+Contributions are welcome! Fork the repository, open issues, or submit pull requests to improve the tool (e.g., adding more models, integrating with LMS, or supporting larger datasets).
+If you find this project useful, don’t forget to ⭐ star the repository to show your support.
 
-bash
-git commit -m 'Add some AmazingFeature'
-Push to Branch
+---
 
-bash
-git push origin feature/AmazingFeature
-Open a Pull Request
+## 📧 Contact
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+For queries, collaborations, or feedback, reach out at **[sayabarshad789@gmail.com](mailto:sayabarshad789@gmail.com)**
 
-📞 Contact
-<div align="center">
-Sayab Arshad
-AI & Machine Learning Developer
 
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
-https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
+---
 
-Project Link: https://github.com/SayabArshad/Automatic-Essay-Grader
-
-</div>
-<div align="center">
-⭐ If you find this project useful, please give it a star!
-</div> ```
+📝 Empowering educators with AI-driven essay evaluation.
